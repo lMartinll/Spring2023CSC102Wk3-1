@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+    This is my UAT Space Page
+    It was created in my CSC102 class from Spring 2023
+    this is for wk2 blastoff assignment
+
+    created by:
+    Martin Rios
+    MARRIOS1@uat.edu
+-->
+<html>
+
+<head>
+    <!--This is the head,
+    It is where all the behind the background stuff goes on-->
+    <title>
+        Prof. Prater's UATSpace page
+    </title>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="UATSpaceLogo-1.jpg">
+    <h1>
+        Welcome to the UAT Space Page
+    </h1>
+<p>
+    This is the test of the paragraph tags. <br> It can be one or more lines depending on the amount of text and the size of the window.
+</p>
+<script>
+    //this is to run the alert and get me points on the assignment
+    document.write("this is a test of the document.write function");
+</script>
+<br>
+<br>
+<h2>Blastoff Timer</h2>
+<div id="blastoffDis">Press Start to begin blastoff timer</div>
+<br>
+<br>
+<br>
+<button onclick="blastoffTimer();">Start</button>
+<button>Stop</button>
+<br>
+<br>
+<h2>Craps game</h2>
+<div id="die1Res">Die 1 Result</div><br>
+<div id="die2Res">Die 2 Result</div><br>
+<div id="diceSum">Sum of Die 1 and Die 2</div><br>
+<div id="gameRes">Game Result</div><br>
+<button onclick="playCraps()">Play Craps!</button><br>
+<br>
+wins<br>
+<div id="winsRes">0</div><br>
+<br>
+loses<br>
+<div id="losesRes">0</div><br>
+<br>
+draws<br>
+<div id="drawsRes">0</div><br>
+<br>
+<h2>Sandbox</h2>
+<br>
+<div id="sandboxText">Text to play with</div>
+    <script>
+        var phunText1 = "This is my ";
+        var phunText2 = "phun text.";
+        var i = 6;
+        var j = 7;
+        var exp = 6**2;
+        exp--;
+        evenTest = exp%2;
+        document.getElementId("sandboxText").innerHTML = evenTest;
+    </script>
+</body>
+
+</html>
